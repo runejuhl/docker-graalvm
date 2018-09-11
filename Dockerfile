@@ -8,8 +8,8 @@ RUN apt-get update && \
 
 RUN curl -L "https://github.com/oracle/graal/releases/download/vm-${GRAALVM_VERSION}/graalvm-ce-${GRAALVM_VERSION}-linux-amd64.tar.gz" | \
       tar zx -C /usr/local/ && \
-      rm -f /usr/local/graalvm-${GRAALVM_VERSION}/src.zip && \
-      ln -s /usr/local/graalvm-${GRAALVM_VERSION} /usr/local/graalvm
+      rm -f /usr/local/graalvm-ce-${GRAALVM_VERSION}/src.zip && \
+      ln -s /usr/local/graalvm-ce-${GRAALVM_VERSION} /usr/local/graalvm
 
 RUN apt-get autoclean && \
     apt-get autoremove && \
