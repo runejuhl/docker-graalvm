@@ -1,0 +1,8 @@
+* Docker Image for GraalVM
+
+A base image to run apps using [[https://www.graalvm.org][GraalVM]].
+
+** Build
+#+BEGIN_SRC sh
+  make docker
+#+END_SRC
